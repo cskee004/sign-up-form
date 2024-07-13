@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    height: 100vh;
+}
+
+.container-a {
+    border: 2px solid black;
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    align-items: center;
+    
+    
+    
+}
+
+.logo {
+    flex-grow: 1;
+    border: 2px solid black;
+    height: 150px;
+    
+    
+}
+
+.container-b {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 2;
+    flex-shrink: 0;
+    
+}
+
+.heading {
+    flex-grow: 1;
+    align-self: center;
+    display: flex;
+    align-items: center;
+}
+
+.heading span {
+    
+}
+
+.form {
+    flex-grow: 1;
+    border: 2px solid black;
+}
+
+.footer {
+    flex-grow: 1;
+    border: 2px solid black;
+}
