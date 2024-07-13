@@ -33,20 +33,24 @@ body {
     
 }
 
-.heading {
+.text-box {
     flex-grow: 1;
     align-self: center;
     display: flex;
     align-items: center;
 }
 
-.heading span {
-    
-}
-
-.form {
+form {
     flex-grow: 1;
     border: 2px solid black;
+}
+
+input[type=text] {
+
+}
+
+input[type=password] {
+    
 }
 
 .footer {
