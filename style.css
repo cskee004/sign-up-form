@@ -1,59 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+  }
+
 body {
     display: flex;
+    flex-direction: row;
     height: 100vh;
 }
 
 .container-a {
-    border: 2px solid black;
+    
+    background-color: #faedcd;
+    background-image: url(./data/amein-shareef77-ditaDArCSr8-unsplash.jpg);
+    background-size: cover;
+    width: 25%;
     display: flex;
-    flex-grow: 1;
-    flex-shrink: 0;
-    justify-content: flex-start;
-    align-items: center;
-    
-    
-    
-}
-
-.logo {
-    flex-grow: 1;
-    border: 2px solid black;
-    height: 150px;
-    
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: black;
     
 }
 
 .container-b {
-    border: 2px solid black;
+    background-color: #F4F9E9;
+    width: 75%;   
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    flex-grow: 2;
-    flex-shrink: 0;
+    justify-content: space-around;
+    color: #153243;
     
 }
+.form-header {
+    margin: 20px;
+}
 
-.text-box {
-    flex-grow: 1;
-    align-self: center;
+.lets-do-this {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.master-content {
+    width: 100%;
+    background-color: #EEF0EB;
+    
+
+}
+
+.content {
+    max-width: 500px;
+    background-color: #EEF0EB;
+}
+
+.content form .user-details {
     display: flex;
-    align-items: center;
-}
-
-form {
-    flex-grow: 1;
-    border: 2px solid black;
-}
-
-input[type=text] {
-
-}
-
-input[type=password] {
+    flex-wrap: wrap;
+    justify-content: space-around;
     
 }
 
-.footer {
+form .user-details .input-box {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: calc(100 /2 - 20px);
+}
+
+form .input-box span.details {
+    display: block;
+}
+
+.create-account {
+    
+    height: 300px;
+    max-width: 100vw;
     flex-grow: 1;
-    border: 2px solid black;
+    background-color: #F4F9E9;
+    
+}
+
+button[type=submit] {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 30px;
+    background-color: #415a77;
+    color: white;
+    border-radius: 10px;
+    border: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, 
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+    rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+input {
+    box-shadow: inset 1px 1px 3px #ccc;
+    border-radius: 5px;
+}
+
+input:focus:invalid {
+    border: 1px solid red;
+}
+
+input:focus:valid {
+    border: 1px solid green
+}
+  
+.log-in {
+    margin: 20px;
+}
+
+.logo img {
+    height: 150px;
+    margin: 20px;
+    
 }

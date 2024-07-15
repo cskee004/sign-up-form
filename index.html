@@ -8,43 +8,70 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/style.css">
         <link rel="stylesheet" href="/reset.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        </style>
         
     </head>
     <body>
         
         <div class="container-a">
-            <div class="logo">Logo</div>
+            <div class="logo">
+                <img src="./data/odin-lined.png" alt="">
+            </div>
+            <div class="container-footer">Photo by <a href="https://unsplash.com/@amein77?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">amein shareef77</a> on <a href="https://unsplash.com/photos/a-woman-sitting-on-a-boat-holding-a-white-dog-ditaDArCSr8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></div>
+  
         </div>
         
+        
         <div class="container-b">
-            <div class="text-box"><span>This is not a real online service! You know you need something <br> like this in your life to help you realize your deepest dreams. <br> Sign up now to get started</span></div>
-            <form>
-                <p>Let's do this!</p>
-                <div class="form-row">
-                    <label for="fname">First name:</label>
-                    <input id="fname" name="fname" type="text" required>
-                    <label for="lname">Last name:</label>
-                    <input id="lname" name="lname" type="text" required>
-                </div>
-                
-                <div class="form-row">
-                    <label for="mail">Email address:</label>
-                    <input id="mail" name="mail" type="email" required>
-                    <label for="phone">Phone number:</label>
-                    <input id="phone" name="phone" type="text" required>
-                </div>
-                
-                <div class="form-row>
-                    <label for="pwd">Password:</label>    
-                    <input id="pwd" name="password" type="password" required>
-                    <label for="cpwd">Confirm password:</label>
-                    <input id="cpwd" name="cpwd" type="password" required>
-                </div>
-                
+            <div class="form-header">This is not a real online service! You know you need something <br>
+                like this in your life to help you realize your deepest dreams. <br>
+                Sign up <em>now</em> to get started.
+                <br>
+                <br>
+                You <em>know</em> you want to.
+            </div>
+            <div class="master-content">
+                <header class="lets-do-this"><h1>Let'd do this!</h1></header>
+                <div class="content">
+                    <form id="sign-up-form">
+                        <div class="user-details">
+                            <div class="input-box">
+                                <span class="details">First name</span>
+                                <input id="fname" name="fname" type="text">
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Last name</span>
+                                <input id="lname" name="lname" type="text">
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Email</span>
+                                <input id="mail" name="mail" type="email">
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Phone number</span>
+                                <input id="phone" name="phone" type="text" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Password</span>
+                                <input id="pwd" name="pwd" type="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Confirm password</span>
+                                <input id="cpwd" name="cpwd" type="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
+                            </div>
+                        </form>
 
-            </form>
-            <div class="footer">Submit Button</div>
+                </div>
 
+            </div>
+            <div class="create-account">
+                <button type="submit" form="sign-up-form">Create account</button>
+                <div class="log-in"><span>Already have an account? <a href="">Log in</a></span></div>
+            </div>
+            
+            
         </div>
     </body>
 </html>
