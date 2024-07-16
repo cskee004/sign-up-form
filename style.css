@@ -83,6 +83,7 @@ body {
 .content {
     max-width: 500px;
     background-color: #EEF0EB;
+    margin-bottom: 10px;
 }
 
 .content form .user-details {
