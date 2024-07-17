@@ -23,7 +23,7 @@ body {
 
 .container-a {
     background-color: #faedcd;
-    background-image: url(./amein-shareef77-ditaDArCSr8-unsplash.jpg);
+    background-image: url(/data/amein-shareef77-ditaDArCSr8-unsplash.jpg);
     background-size: cover;
     width: 25%;
     display: flex;
