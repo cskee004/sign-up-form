@@ -1,5 +1,3 @@
-
-
 var password = document.getElementById("pwd")
 , confirmPassword = document.getElementById("cpwd");
 
