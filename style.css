@@ -22,7 +22,6 @@ body {
 }
 
 .container-a {
-    
     background-color: #faedcd;
     background-image: url(./data/amein-shareef77-ditaDArCSr8-unsplash.jpg);
     background-size: cover;
@@ -32,7 +31,6 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     color: black;
-    
 }
 
 .logo-box {
